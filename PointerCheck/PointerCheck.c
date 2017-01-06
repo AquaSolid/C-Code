@@ -4,7 +4,7 @@
 #include <string.h>
 struct node {
 	int val;
-struct node *next;
+	struct node *next;
 };
 
 struct node *head = NULL;
