@@ -1,0 +1,1 @@
+printf("%s deleted succesfully!\n", input_file);

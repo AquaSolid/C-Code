@@ -39,10 +39,22 @@ int upNumber (int a) {
 	return flipNumber(new);
 }
 
-int main(int argc, char const *argv[]) {
-	int x = 1234;
+int gcd (int a, int b) {
+	if (b != 0) {
+		if (a % b == 0) return b;
+		return gcd(b, a % b);
+	} else {
+		if (a) return a;
+		return 0;
+	}
+}
 
-	printf("%d\n", sumOfDigits(x));
+int main(int argc, char const *argv[]) {
+
+	printf("%d\n", gcd(982173,8917384));
+	printf("%d\n", gcd(123, 3213));
+	printf("%d\n", gcd(123, 0));
+	printf("%d\n", gcd(0, 0));
 
 	return 0;
 }

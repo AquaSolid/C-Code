@@ -183,8 +183,7 @@ int main(int argc, char const *argv[]) {
 		}
 		printf("Command(m for menu): ");
 	}
-	return 0;
-}
+	return 0;}
 
 /*
 	for (int i = 0; i < 3; ++i) {
